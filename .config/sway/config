@@ -71,7 +71,7 @@ output 'Goldstar Company Ltd LG HDR 4K 0x0000B740' scale 1.5
     bindsym Alt+q kill
 
     # Start your launcher
-    bindsym Alt+Space exec $menu
+    bindsym Alt+Space exec wofi
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
