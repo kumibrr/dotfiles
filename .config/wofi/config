@@ -1,4 +1,7 @@
-width=800
-height=400
+width=600
+height=310
 insensitive=true
 mode=drun,run
+allow_images=true
+prompt=Type to find an application
+no_actions=true
