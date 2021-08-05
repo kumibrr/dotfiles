@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["idle_inhibitor","pulseaudio", "network", "temperature", "cpu", "memory", "clock", "custom/nwgbar"],
+	"modules-right": ["idle_inhibitor", "custom/arrow6","pulseaudio", "custom/arrow5", "network", "custom/arrow4", "temperature", "custom/arrow3", "cpu", "custom/arrow2", "memory", "custom/arrow1", "clock", "custom/arrow0", "custom/nwgbar"],
 	"pulseaudio": {
 		"tooltip": true,
 		"scroll-step": 5,
@@ -46,5 +46,33 @@
 		"format": "",
 		"on-click": "nwg-bar",
 		"tooltip": false
-	}
+	},
+	"custom/arrow0": {
+		"format": "",
+		"tooltip": false
+	},
+        "custom/arrow1": {
+                "format": "",
+                "tooltip": false
+        },
+        "custom/arrow2": {
+                "format": "",
+                "tooltip": false
+        },
+        "custom/arrow3": {
+                "format": "",
+                "tooltip": false
+        },
+        "custom/arrow4": {
+                "format": "",
+                "tooltip": false
+        },
+        "custom/arrow5": {
+                "format": "",
+                "tooltip": false
+        },
+        "custom/arrow6": {
+                "format": "",
+                "tooltip": false
+        },
 }
