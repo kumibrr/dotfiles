@@ -52,10 +52,8 @@ window#waybar.empty #window {
 }
 
 #workspaces button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #ff79c6;
+	color: #35b9ab;
+	border: none;
 }
 
 #network {
