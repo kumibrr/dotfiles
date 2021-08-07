@@ -71,7 +71,7 @@ window#waybar.empty #window {
 #temperature {
 	padding-right: 8px;
 	color: #f8f8f2;
-	background: #b9dc92;
+	background: #b6d3a0;
 }
 
 #cpu {
@@ -112,13 +112,12 @@ window#waybar.empty #window {
 	padding-left: 3px;
 	padding-right: 15px;
 	color: #f8f8f2;
-	background: #173f4f;
-	
+	background: #68cbc0;
 }
 
 #custom-arrow0 {
 	background: #73ba25;
-	color: #173f4f;
+	color: #68cbc0;
 	font-size: 22px;
 }
 #custom-arrow1 {
@@ -132,13 +131,13 @@ window#waybar.empty #window {
 	font-size:22px;
 }
 #custom-arrow3 {
-        background: #b9dc92;
+        background: #b6d3a0;
         color: #96cb5c;
 	font-size: 22px;
 }
 #custom-arrow4 {
         background: #8b9fa7;
-	color: #b9dc92;
+	color: #b6d3a0;
 	font-size: 22px;
 }
 #custom-arrow5 {
