@@ -74,6 +74,7 @@ unzip $HOME/temp/FiraCode.zip -d $HOME/temp/FiraCode
 sudo mv $HOME/temp/FiraCode/* /usr/share/fonts/truetype/
 
 # Commenting default opensuse wallpaper for sway
+sudo sed -i '/^[^#]/ s/\(^.*output.*$\)/#\1/' /etc/sway/config.d/50-openSUSE.conf
 
 #Cleaning up
 sudo rm -r $HOME/temp
