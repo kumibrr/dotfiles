@@ -2,6 +2,9 @@
 sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
 sudo zypper -n --gpg-auto-import-keys dup --from packman --allow-vendor-change
 
+# Installing utilities
+sudo zypper -n install mpv
+
 # Installing Microsoft needed programs (edge must be installed for msteams)
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -78,5 +81,3 @@ sudo sed -i '/^[^#]/ s/\(^.*output.*$\)/#\1/' /etc/sway/config.d/50-openSUSE.con
 
 #Cleaning up
 sudo rm -r $HOME/temp
-
-# Color rojo: #CE2E42
