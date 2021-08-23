@@ -218,7 +218,7 @@ bindsym $mod+r mode "resize"
 #}
 #
 #Initialize layout maanagement script:
-exec layout.py
+exec python3 $HOME/.config/sway/layout.py
 
 include /etc/sway/config.d/*.conf
 include ~/.config/sway/config.d/*
