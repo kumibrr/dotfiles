@@ -4,7 +4,7 @@
 mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
-sudo pacman -S --noconfirm pamac mpv vim
+sudo pacman -S --noconfirm pamac mpv vim github-cli
 sudo pacman -R --noconfirm autotiling
 sudo pamac install --no-confirm code
 sudo pamac build --no-confirm code-marketplace
