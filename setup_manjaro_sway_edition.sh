@@ -26,8 +26,7 @@ npm install tldr
 sudo pamac build --no-confirm angular-cli vercel
 # INSTALLING ZSH CONFIGS
 
-cd /usr/share/oh-my-zsh/custom/plugins
-sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git /usr/share/oh-my-zsh/custom/plugins/zsh-autocomplete
 
 cd $HOME
 mv .config/zsh/.zshrc .config/zsh/.zshrc.backup
