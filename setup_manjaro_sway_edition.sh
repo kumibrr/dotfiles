@@ -5,7 +5,7 @@ mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
 
-sudo pacman -S --noconfirm pamac mpv
+sudo pacman -S --noconfirm pamac mpv vim
 sudo pamac install --no-confirm code
 sudo pamac build --no-confirm code-marketplace
 sudo pamac build --no-confirm microsoft-edge-beta
