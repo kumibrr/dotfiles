@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 # CREATING TEMP DIRECTORY
 mkdir $HOME/temp
