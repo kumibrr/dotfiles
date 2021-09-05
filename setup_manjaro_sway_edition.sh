@@ -33,7 +33,7 @@ mv .config/zsh/.zshrc .config/zsh/.zshrc.backup
 
 # INSTALLING DOTFILES BARE GIT REPOSITORY
 
-git clone -b manjaro-sway-edition --single-branch --bare https://github.com/kumibrr/dotfiles-linux.git $HOME/dotfiles
+git clone -b manjaro-sway-edition --single-branch --bare https://github.com/kumibrr/dotfiles-linux.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout
 /usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 # INSTALLING FONTS
