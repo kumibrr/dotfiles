@@ -4,7 +4,7 @@
 mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
-sudo pacman -S --noconfirm pamac mpv vim github-cli
+sudo pacman -S --noconfirm pamac mpv vim xdg-desktop-portal-wrl github-cli
 sudo pacman -R --noconfirm autotiling
 sudo pamac install --no-confirm code
 sudo pamac build --no-confirm code-marketplace
@@ -31,7 +31,7 @@ mv .config/zsh/.zshrc .config/zsh/.zshrc.backup
 
 # INSTALLING DOTFILES BARE GIT REPOSITORY
 git clone -b manjaro-sway-edition --single-branch --bare https://github.com/kumibrr/dotfiles-linux.git $HOME/.dotfiles
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout -f
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
 sudo mv /usr/share/zsh/manjaro-zsh-config /usr/share/zsh/manjaro-zsh-config.backup
@@ -44,3 +44,6 @@ sudo mv $HOME/temp/FiraCode/* /usr/share/fonts/TTF/
 
 # CLEANING UP
 sudo rm -r $HOME/temp
+
+
+# LASTLY REMEMBER TO ENABLE #enable-webrtc-pipewire-capturer FLAG IN BROWSER
