@@ -5,9 +5,7 @@ mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
 sudo pacman -S --noconfirm pamac mpv vim xdg-desktop-portal-wrl github-cli
-sudo pacman -R --noconfirm autotiling
-sudo pamac install --no-confirm code
-sudo pamac build --no-confirm code-marketplace
+sudo pamac build --no-confirm visual-studio-code-bin
 sudo pamac build --no-confirm microsoft-edge-beta
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
