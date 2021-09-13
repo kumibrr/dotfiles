@@ -20,3 +20,6 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=blue'
 
 # Fix for foot terminfo not installed on most servers
 alias ssh="TERM=xterm-256color ssh"
+
+# Fix vscode from terminal to enable wayland features
+alias code="/opt/visual-studio-code/code --no-sandbox --new-window -enable-features=UseOzonePlatform --ozone-platform=wayland"
