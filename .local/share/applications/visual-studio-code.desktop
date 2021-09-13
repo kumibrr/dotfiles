@@ -14,6 +14,5 @@ Keywords=vscode;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
-Exec=/opt/visual-studio-code/code --no-sandbox --new-window -enable-features=UseOzonePlatform --o
-zone-platform=wayland %F
+Exec=/opt/visual-studio-code/code --no-sandbox --new-window -enable-features=UseOzonePlatform --ozone-platform=wayland %F 
 Icon=visual-studio-code
