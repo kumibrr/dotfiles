@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Microsoft Teams
+Exec=/opt/microsoft/msedge-beta/microsoft-edge-beta --enable-features=UseOzonePlatform --ozone-platform=wayland --profile-directory=Default --app-id=mcdckmfonglinilckibpdlihcpmpphld "--app-url=https://teams.live.com/"
+Icon=msedge-mcdckmfonglinilckibpdlihcpmpphld-Default
+StartupWMClass=crx__mcdckmfonglinilckibpdlihcpmpphld
