@@ -5,7 +5,7 @@ mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
 sudo pacman -S --noconfirm yay mpv vim xdg-desktop-portal-wrl github-cli
-sudo yay -S --noconfirm visual-studio-code-bin microsoft-edge-beta
+sudo yay -S --noconfirm visual-studio-code-bin microsoft-edge-beta apple-music-electron-git
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
 cd $HOME/temp
