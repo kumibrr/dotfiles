@@ -5,7 +5,7 @@ mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
 sudo pacman -S --noconfirm yay mpv vim xdg-desktop-portal-wrl github-cli
-sudo yay -S --noconfirm visual-studio-code-bin microsoft-edge-beta apple-music-electron-git
+yay -S --noconfirm visual-studio-code-bin microsoft-edge-beta apple-music-electron-git
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
 cd $HOME/temp
@@ -18,7 +18,7 @@ cd
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh)"
 nvm install node
 npm install -g tldr
-sudo yay -S --noconfirm angular-cli vercel
+yay -S --noconfirm angular-cli vercel
 
 # INSTALLING ZSH CONFIGS
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git /usr/share/oh-my-zsh/custom/plugins/zsh-autocomplete
