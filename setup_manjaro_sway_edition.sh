@@ -4,9 +4,8 @@
 mkdir $HOME/temp
 
 # INSTALLING APPLICATIONS
-sudo pacman -S --noconfirm pamac mpv vim xdg-desktop-portal-wrl github-cli
-sudo pamac build --no-confirm visual-studio-code-bin
-sudo pamac build --no-confirm microsoft-edge-beta
+sudo pacman -S --noconfirm yay mpv vim xdg-desktop-portal-wrl github-cli
+sudo yay -S --noconfirm visual-studio-code-bin microsoft-edge-beta
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
 cd $HOME/temp
@@ -18,8 +17,8 @@ cd
 # INSTALLING NVM, NODE AND UTILITIES
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh)"
 nvm install node
-npm install tldr
-sudo pamac build --no-confirm angular-cli vercel
+npm install -g tldr
+sudo yay -S --noconfirm angular-cli vercel
 
 # INSTALLING ZSH CONFIGS
 sudo git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git /usr/share/oh-my-zsh/custom/plugins/zsh-autocomplete
@@ -44,4 +43,4 @@ sudo mv $HOME/temp/FiraCode/* /usr/share/fonts/TTF/
 sudo rm -r $HOME/temp
 
 
-# LASTLY REMEMBER TO ENABLE #enable-webrtc-pipewire-capturer FLAG IN BROWSER
+echo "******REMEMBER TO ENABLE #enable-webrtc-pipewire-capturer FLAG IN BROWSER******"
