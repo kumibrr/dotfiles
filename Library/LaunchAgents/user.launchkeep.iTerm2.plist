@@ -6,7 +6,10 @@
   <string>user.launchkeep.iTerm2</string>
   <key>KeepAlive</key>
   <true/>
-  <key>Program</key>
-  <string>/Applications/iTerm.app/Contents/MacOS/iTerm2</string>
+  <key>ProgramArguments</key>
+  <array>
+	<string>/Applications/iTerm.app/Contents/MacOS/iTerm2</string>
+	<string>--hide</string>
+  </array>
 </dict>
 </plist>
