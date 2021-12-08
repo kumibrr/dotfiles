@@ -5,8 +5,10 @@ mkdir $HOME/temp
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+brew tap homebrew/cask-versions
+
 # INSTALLING APPLICATIONS
-brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition	visual-studio-code iterm2 vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
+brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition	visual-studio-code iterm2-beta vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
 
 brew install cocoapods gh gnupg neofetch nvm pinentry vercel-cli wget
 
