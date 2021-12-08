@@ -6,7 +6,7 @@ mkdir $HOME/temp
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # INSTALLING APPLICATIONS
-brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer	tor-browser firefox-developer-edition	visual-studio-code iterm2 vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
+brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition	visual-studio-code iterm2 vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
 
 brew install cocoapods gh gnupg neofetch nvm pinentry vercel-cli wget
 
@@ -32,7 +32,7 @@ unzip $HOME/temp/FiraCode.zip -d $HOME/temp/FiraCode
 mv $HOME/temp/FiraCode/*Complete.ttf $HOME/Library/Fonts/
 
 # CLEANING UP
-sudo rm -r $HOME/temp
+rm -r $HOME/temp
 
 
 echo "******PLEASE REMEMBER TO ADD YOUR ITERM PROFILE AND SETUP GIT******"
