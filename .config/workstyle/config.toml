@@ -24,7 +24,7 @@
 "gthumb" = ""
 "menu" = ""
 "calculator" = ""
-"transmission" = ""
+"transmission web interface" = ""
 "videostream" = ""
 "mpv" = ""
 "music" = ""
@@ -32,7 +32,8 @@
 ".pdf" = ""
 "discord" = ""
 "code" = "﬏"
-
+"cider" = ""
+"steam" = ""
 [other]
 fallback_icon = ""
 deduplicate_icons = false
