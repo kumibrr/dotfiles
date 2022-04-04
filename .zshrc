@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/israeldelabarrera/.oh-my-zsh"
+export ZSH="/Users/israel/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -82,7 +82,7 @@ plugins=(git zsh-autocomplete zsh-syntax-highlighting node nvm)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-eval "$(fnm env --use-on-cd)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
