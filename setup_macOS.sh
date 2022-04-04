@@ -10,7 +10,7 @@ brew tap homebrew/cask-versions
 # INSTALLING APPLICATIONS
 brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition	visual-studio-code iterm2-beta vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
 
-brew install cocoapods gh gnupg neofetch fnm pinentry vercel-cli wget
+brew install cocoapods gh gnupg neofetch nvm pinentry vercel-cli wget
 
 # INSTALLING NVM, NODE AND UTILITIES
 nvm install node
