@@ -8,7 +8,7 @@ mkdir $HOME/temp
 brew tap homebrew/cask-versions
 
 # INSTALLING APPLICATIONS
-brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition	visual-studio-code iterm2-beta vmware-fusion keepingyouawake	whatsapp macs-fan-control mpv
+brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition visual-studio-code iterm2-beta keepingyouawake whatsapp macs-fan-control mpv fig
 
 brew install cocoapods gh gnupg neofetch nvm pinentry vercel-cli wget
 
@@ -18,13 +18,11 @@ npm install -g tldr
 
 # INSTALLING ZSH PLUGINS
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-
 # INSTALLING DOTFILES BARE GIT REPOSITORY
-git clone -b macos --single-branch --bare https://github.com/kumibrr/dotfiles.git $HOME/.dotfiles
+git clone -b macos --single-branch --bare git@github.com:kumibrr/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout -f
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
