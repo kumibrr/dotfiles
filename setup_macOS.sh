@@ -8,31 +8,40 @@ mkdir $HOME/temp
 brew tap homebrew/cask-versions
 
 # INSTALLING APPLICATIONS
-brew install --cask balenaetcher microsoft-teams coconutbattery onedrive docker	raycast dolphin	the-unarchiver dozer tor-browser firefox-developer-edition visual-studio-code iterm2-beta keepingyouawake whatsapp macs-fan-control mpv fig
+brew install --cask balenaetcher coconutbattery docker the-unarchiver firefox visual-studio-code iterm2 keepingyouawake macs-fan-control mpv
 
-brew install cocoapods gh gnupg neofetch nvm pinentry vercel-cli wget
+brew install cocoapods gh gnupg fastfech volta pinentry vercel-cli wget
 
 # INSTALLING NVM, NODE AND UTILITIES
-nvm install node
-npm install -g tldr
+volta install node
+volta install corepack
+volta install tldr
+volta install @angular/cli
+pnpm setup
 
-# INSTALLING ZSH PLUGINS
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# INSTALLING ZIMFW
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 # INSTALLING DOTFILES BARE GIT REPOSITORY
-git clone -b macos --single-branch --bare git@github.com:kumibrr/dotfiles.git $HOME/.dotfiles
+git clone -b macOS --single-branch --bare https://github.com/kumibrr/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout -f
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
 # INSTALLING FONTS
 wget -O $HOME/temp/FiraCode.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
 unzip $HOME/temp/FiraCode.zip -d $HOME/temp/FiraCode
+mkdir $HOME/temp/meslo
+wget -O $HOME/temp/meslo/MesloLGS%20NF%20Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+wget -O $HOME/temp/meslo/MesloLGS%20NF%20Bold.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget -O $HOME/temp/meslo/MesloLGS%20NF%20Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget -O $HOME/temp/meslo/MesloLGS%20NF%20Bold%20Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
 mv $HOME/temp/FiraCode/*Complete.ttf $HOME/Library/Fonts/
+mv $HOME/temp/meslo/*.ttf $HOME/Library/Fonts/
+
 
 # CLEANING UP
 rm -r $HOME/temp
 
-
+echo "******OPEN A NEW TERMINAL AND RUN 'zimfw install******"
 echo "******PLEASE REMEMBER TO ADD YOUR ITERM PROFILE AND SETUP GIT******"
